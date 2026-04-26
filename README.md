@@ -1,2 +1,2 @@
 # InkLab
-web partri
+Deploy preparado.
