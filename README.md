@@ -1,2 +1,0 @@
-# InkLab
-Deploy preparado.
