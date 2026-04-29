@@ -1,0 +1,40 @@
+InkLab v15 - Responsive móvil + carruseles
+Base usada: InkLab-v14-header-botones-derecha.zip
+
+Cambios aplicados SOLO en:
+- assets/css/inklab-real-final-v8.css
+- assets/js/inklab-mobile-menu-real-fix-v8.js
+
+HTML tocado: 0 archivos.
+HTML que cargan el CSS final: 40/40.
+HTML que cargan el JS final: 40/40.
+
+Responsive aplicado:
+- Mobile <=760px: módulos de tarjetas/galerías/reviews/FAQ visual pasan a carrusel horizontal con scroll-snap.
+- Tablet 761-1180px: módulos de 3/4 tarjetas pasan a 2 columnas.
+- Desktop: se mantiene el grid existente.
+- Menú móvil reforzado: cerrado por defecto, panel opaco, scroll interno y enlaces clicables.
+- Touch targets mínimos reforzados en botones, enlaces, summary y navegación.
+- Tipografía móvil contenida con clamp() y sin romper la familia elegida.
+- Soporte prefers-reduced-motion para reducir animaciones/parallax.
+- Controles de carrusel añadidos por JS solo cuando hay más de un item: anterior/siguiente, teclado con flechas y sin autoplay.
+- Lazy loading y decoding async añadidos a imágenes no hero.
+
+Selectores convertidos en carrusel móvil:
+.mobile-carousel
+.surface-card-grid
+.surface-steps
+.surface-gallery
+.editorial-strip
+.process-final
+.gallery-final
+.review-track
+.ux-card-grid
+.ux-steps
+.ux-gallery
+.grid-3
+.grid-4
+.nav-index-grid
+.home-choice-grid
+.home-choice-black-grid
+.faq-final

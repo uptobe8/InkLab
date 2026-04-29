@@ -1,0 +1,1 @@
+Corrección final aplicada: escala tipográfica reducida en páginas de piercing, módulos de 4 tarjetas en una línea en desktop, carruseles solo móvil, cabecera sin botones duplicados, logo desde assets/img/inklab_logo_new.webp y reducción del módulo principal de index.html.

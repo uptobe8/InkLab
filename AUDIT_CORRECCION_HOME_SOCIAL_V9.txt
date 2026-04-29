@@ -1,0 +1,1 @@
+V9 aplicado: imagen home quote sustituida; redes sociales a iconos SVG rosa; tipografía del módulo quote alineada al sistema.

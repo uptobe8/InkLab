@@ -1,0 +1,24 @@
+AUDIT_CABECERA_BOTONES_DERECHA_V14
+
+Base usada:
+- InkLab-v13-header-final.zip
+
+Cambio aplicado:
+- Botones de cabecera "Llamar" y "Tatúate" desplazados a la derecha en escritorio.
+- No se ha tocado menú móvil.
+- No se han tocado carruseles.
+- No se han tocado imágenes.
+- No se han tocado contenidos.
+- No se han tocado las páginas de redirección sin cabecera.
+
+Aplicación:
+- CSS global actualizado: assets/css/inklab-real-final-v8.css
+- Afecta a todas las páginas que cargan ese CSS.
+- Páginas con cabecera: 38/38.
+- Páginas sin cabecera: 2 redirecciones.
+
+Reglas añadidas:
+- Header full width con padding lateral.
+- Navegación empujada hacia la derecha.
+- .head-actions como último bloque alineado al extremo derecho.
+- En móvil, .head-actions se mantiene oculto como estaba.

@@ -1,1 +1,0 @@
-V11 aplicado: tipografía editorial Cormorant/Marcellus/Manrope en todos los HTML; escala responsive reducida; módulos de tarjetas, galerías, reviews y grids convertidos a carrusel solo en móvil; menú móvil preservado con JS V10 y refuerzo V11.

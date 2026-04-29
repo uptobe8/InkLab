@@ -1,1 +1,0 @@
-V10 seguro aplicado desde paquete base. Responsive original preservado; CSS/JS acotado añadido; menú móvil clicable; carruseles móviles reforzados; home image/social corregidos. {'html': 38, 'social': 37, 'csslinks': 38, 'jslinks': 38, 'img': 1}
