@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Rediseño Doartist · INK LAB Madrid</title><meta content="Rediseño conceptual para INK LAB Madrid" name="description"/><style id="inklab-v3-inline-style">
+:root{
+  --black:#050505; --ink:#0b0b0c; --paper:#fbf7f5; --white:#fff; --grey:#b8b0b7;
+  --muted:#8d848c; --line:rgba(255,255,255,.14); --line-dark:rgba(0,0,0,.12);
+  --pink:#E026AB; --hot:#FF0EDA; --rose:#F050C2; --smoke:#151217; --wine:#21121d;
+  --max:1220px; --pad:clamp(20px,4.6vw,72px);
+  --display:'Playfair Display','Playfair',Georgia,serif; --sans:'Roboto',Inter,system-ui,-apple-system,Segoe UI,sans-serif; --script:'Satisfy',cursive;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--paper);font-family:var(--sans);font-weight:400;line-height:1.45;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.full{width:100%;padding-left:var(--pad);padding-right:var(--pad)}
+.preloader-note{display:none}.topbar{background:#000;border-bottom:1px solid var(--line);font-size:12px;color:#d7cdd4}.topbar .full{min-height:36px;display:flex;justify-content:space-between;align-items:center;gap:20px}.topbar a{color:#fff}.header{position:sticky;top:0;z-index:50;background:rgba(5,5,5,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.head{min-height:82px;display:grid;grid-template-columns:220px 1fr auto;align-items:center;gap:28px}.logo img{height:58px;width:auto;object-fit:contain}.nav{display:flex;justify-content:center;gap:26px;align-items:center;font-size:13px;text-transform:uppercase;letter-spacing:.12em}.nav a{position:relative;color:#f6e9f1}.nav a:after{content:'';position:absolute;left:0;right:0;bottom:-10px;height:1px;background:var(--pink);transform:scaleX(0);transform-origin:left;transition:.18s}.nav a:hover:after,.nav a.active:after{transform:scaleX(1)}.head-actions{display:flex;align-items:center;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 22px;border:1px solid var(--line);border-radius:999px;text-transform:uppercase;letter-spacing:.11em;font-size:12px;font-weight:500;background:transparent;color:#fff;cursor:pointer}.btn-pink{background:linear-gradient(135deg,var(--pink),var(--hot));border-color:transparent;color:#fff;box-shadow:0 12px 42px rgba(224,38,171,.25)}.btn-white{background:#fff;color:#000;border-color:#fff}.btn-dark{background:#000;color:#fff;border-color:rgba(255,255,255,.18)}.nav-toggle,.hamb{display:none}.hero{position:relative;min-height:calc(100vh - 118px);display:grid;grid-template-columns:1fr .86fr;align-items:stretch;overflow:hidden;background:radial-gradient(circle at 16% 20%,rgba(224,38,171,.2),transparent 28%),linear-gradient(115deg,#050505 0%,#160913 62%,#050505 100%)}.hero-copy{padding:clamp(70px,8vw,126px) 0 clamp(60px,7vw,100px) var(--pad);display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}.eyebrow{display:inline-flex;align-items:center;gap:12px;color:#ffb4e7;text-transform:uppercase;letter-spacing:.17em;font-size:12px;margin-bottom:26px}.eyebrow:before{content:'';width:50px;height:1px;background:var(--pink)}h1,h2,h3,p{margin-top:0}.hero h1{font-family:var(--display);font-size:clamp(58px,8vw,128px);line-height:.82;letter-spacing:-.065em;font-weight:400;margin:0 0 26px;max-width:820px}.script{font-family:var(--script);font-weight:400;color:var(--hot);letter-spacing:-.035em}.lead{font-size:clamp(17px,1.7vw,23px);color:#e8dbe4;max-width:650px;margin-bottom:34px}.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}.hero-media{position:relative;min-height:620px}.hero-media img{height:100%;width:100%;object-fit:cover;filter:grayscale(.18) contrast(1.08) brightness(.85)}.hero-media:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#050505,rgba(5,5,5,.08) 38%,rgba(5,5,5,.35));z-index:1}.hero-stamp{position:absolute;right:var(--pad);bottom:44px;z-index:2;width:210px;height:210px;border:1px solid rgba(255,255,255,.22);border-radius:50%;display:grid;place-items:center;text-align:center;color:#fff;text-transform:uppercase;letter-spacing:.16em;font-size:11px;background:rgba(0,0,0,.32);backdrop-filter:blur(8px)}.scrollmark{position:absolute;left:var(--pad);bottom:24px;color:#9d9299;font-size:12px;text-transform:uppercase;letter-spacing:.18em}.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:#0a080a}.marquee-track{display:flex;gap:42px;white-space:nowrap;animation:mar 28s linear infinite;padding:18px 0;color:#fff;text-transform:uppercase;letter-spacing:.17em;font-size:12px}.marquee-track span{display:inline-flex;gap:42px}.marquee b{color:var(--pink);font-weight:400}@keyframes mar{to{transform:translateX(-50%)}}
+.section{padding:clamp(68px,8vw,118px) 0}.section.light{background:var(--paper);color:#111}.section.wine{background:linear-gradient(180deg,#10070e,#060606)}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:38px}.section-head h2{font-family:var(--display);font-size:clamp(42px,6vw,86px);line-height:.9;letter-spacing:-.055em;font-weight:400;margin:0;max-width:850px}.section-head p{color:var(--muted);max-width:430px;margin:0}.light .section-head p{color:#5e565c}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.style-card{position:relative;min-height:410px;overflow:hidden;border:1px solid var(--line);background:#111}.style-card img{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;opacity:.74;filter:grayscale(.4) contrast(1.1);transition:.45s}.style-card:hover img{transform:scale(1.05);filter:grayscale(.05) contrast(1.08)}.style-card:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.86),rgba(0,0,0,.05) 62%)}.style-content{position:absolute;left:22px;right:22px;bottom:22px;z-index:2}.style-content .num{font-family:var(--display);color:var(--pink);font-size:34px}.style-content h3{font-family:var(--display);font-weight:400;font-size:32px;margin:8px 0 10px;line-height:.96}.style-content p{color:#d4c9d1;font-size:14px;margin-bottom:18px}.arrow{display:inline-flex;align-items:center;gap:10px;color:#fff;text-transform:uppercase;letter-spacing:.13em;font-size:12px}.arrow:after{content:'→';color:var(--pink)}.feature-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,70px);align-items:center}.feature-img{position:relative;min-height:620px;overflow:hidden}.feature-img img{height:100%;width:100%;object-fit:cover;filter:grayscale(.2) contrast(1.08)}.feature-img:after{content:'';position:absolute;inset:0;border:1px solid rgba(255,255,255,.16);margin:18px;pointer-events:none}.quote{font-family:var(--display);font-size:clamp(46px,6vw,88px);line-height:.92;letter-spacing:-.05em;margin-bottom:28px}.text-block p{color:#cfc3cb;font-size:18px;max-width:690px}.service-pill{display:flex;gap:14px;align-items:center;border-top:1px solid var(--line);padding:20px 0;color:#fff}.service-pill span{color:var(--pink);font-size:22px}.artist-card{position:relative;overflow:hidden;background:#100d10;border:1px solid var(--line)}.artist-card img{height:430px;width:100%;object-fit:cover;filter:grayscale(.1) contrast(1.05)}.artist-info{padding:22px}.artist-info small{text-transform:uppercase;letter-spacing:.16em;color:var(--pink)}.artist-info h3{font-family:var(--display);font-weight:400;font-size:34px;margin:5px 0}.reviews{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:start}.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.review{background:#fff;color:#111;padding:26px;border:1px solid var(--line-dark)}.stars{color:#f0b000;letter-spacing:2px;margin-bottom:12px}.studio-split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.studio-panel{min-height:360px;background:#111;position:relative;overflow:hidden}.studio-panel img{height:100%;width:100%;object-fit:cover;opacity:.78}.studio-panel .inner{position:absolute;left:28px;right:28px;bottom:26px;z-index:2}.studio-panel:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#000,rgba(0,0,0,.1) 60%)}.treatment{background:#fff;color:#111;padding:30px;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line-dark)}.treatment h3{font-family:var(--display);font-size:36px;font-weight:400}.contact-band{background:#000;color:#fff;padding:clamp(70px,10vw,130px) var(--pad);display:grid;grid-template-columns:1fr .9fr;gap:42px;align-items:center}.contact-band h2{font-family:var(--display);font-weight:400;font-size:clamp(50px,7vw,110px);line-height:.85;letter-spacing:-.055em}.contact-actions{display:grid;gap:12px}.contact-actions a{padding:20px;border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.footer{background:#050505;border-top:1px solid var(--line);padding:54px var(--pad) 24px;color:#cfc3cb}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}.footer img{height:64px;width:auto;margin-bottom:18px}.footer h4{color:#fff;text-transform:uppercase;letter-spacing:.14em;font-size:12px}.footer a{display:block;margin:9px 0;color:#cfc3cb}.bottom{border-top:1px solid var(--line);margin-top:34px;padding-top:20px;font-size:12px;color:#91868d;display:flex;justify-content:space-between}.page-hero{min-height:520px;display:grid;grid-template-columns:1.1fr .9fr;background:linear-gradient(130deg,#050505,#170714);align-items:center}.page-hero .copy{padding:80px 0 70px var(--pad)}.page-hero h1{font-family:var(--display);font-size:clamp(58px,8vw,112px);line-height:.84;letter-spacing:-.06em;font-weight:400;margin:0 0 22px}.page-hero p{font-size:20px;color:#dccfda;max-width:660px}.page-hero .media{height:100%;min-height:520px}.page-hero .media img{height:100%;width:100%;object-fit:cover;filter:grayscale(.22) contrast(1.1)}.content-panel{background:var(--paper);color:#111;padding:clamp(60px,7vw,100px) var(--pad)}.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.copy-card{padding:30px;background:#fff;border:1px solid var(--line-dark)}.copy-card h3{font-family:var(--display);font-size:38px;font-weight:400}.fixed-actions{position:fixed;right:18px;bottom:18px;z-index:60;display:grid;gap:10px}.fixed-actions a{box-shadow:0 16px 40px rgba(0,0,0,.32)}
+@media(max-width:1000px){.head{grid-template-columns:1fr auto}.nav{position:fixed;left:0;right:0;top:119px;background:rgba(5,5,5,.98);display:none;flex-direction:column;align-items:stretch;padding:22px var(--pad);border-bottom:1px solid var(--line)}.nav a{padding:16px 0;border-bottom:1px solid var(--line)}.nav-toggle:checked ~ .nav{display:flex}.hamb{display:flex;width:46px;height:46px;border:1px solid var(--line);border-radius:50%;align-items:center;justify-content:center;flex-direction:column;gap:5px}.hamb span{display:block;width:18px;height:2px;background:#fff}.nav-toggle{position:absolute;opacity:0}.head-actions{display:none}.hero,.page-hero,.feature-layout,.reviews,.studio-split,.contact-band,.content-grid{grid-template-columns:1fr}.hero-copy{padding-right:var(--pad)}.hero-media,.page-hero .media{min-height:420px}.grid-4,.grid-3,.review-grid,.footer-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(54px,12vw,92px)}}
+@media(max-width:620px){.topbar .full{display:block;padding-top:8px;padding-bottom:8px}.head{min-height:70px}.logo img{height:46px}.nav{top:106px}.hero{min-height:auto}.hero-copy{padding-top:58px;padding-bottom:64px}.hero-media{min-height:330px}.hero-stamp{display:none}.hero-ctas,.fixed-actions{left:12px;right:12px}.hero-ctas .btn,.fixed-actions .btn{width:100%}.grid-4,.grid-3,.review-grid,.footer-grid{grid-template-columns:1fr}.section-head{display:block}.section-head h2{margin-bottom:16px}.style-card{min-height:360px}.artist-card img{height:360px}.contact-band{padding-left:20px;padding-right:20px}.bottom{display:block}.fixed-actions{bottom:12px}.fixed-actions{position:fixed}.fixed-actions{display:grid;grid-template-columns:1fr 1fr}.fixed-actions .btn{padding-left:12px;padding-right:12px;font-size:11px}body{padding-bottom:86px}.page-hero .copy{padding:60px 20px}.page-hero h1{font-size:52px}}
+
+
+/* === INK LAB FINAL UX EXPANSION === */
+.page-depth { padding: 96px 0; background:#0c0b0f; color:#fff; }
+.page-depth.light { background:#f5efe8; color:#141414; }
+.depth-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center; }
+.depth-copy h2, .depth-panel h2 { font-size:clamp(34px,5vw,72px); line-height:.95; margin:0 0 18px; }
+.depth-copy p { color:#d6cdc3; font-size:18px; max-width:720px; }
+.light .depth-copy p { color:#4e4741; }
+.depth-media img { width:100%; min-height:520px; object-fit:cover; border-radius:28px; box-shadow:0 30px 90px rgba(0,0,0,.32); }
+.editorial-strip { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:28px; }
+.editorial-strip article { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.1); border-radius:22px; padding:22px; min-height:180px; }
+.light .editorial-strip article { background:#fff; border-color:rgba(0,0,0,.08); }
+.editorial-strip span { color:#E026AB; font-weight:800; display:block; margin-bottom:12px; }
+.editorial-strip h3 { margin:0 0 10px; }
+.editorial-strip p { font-size:15px; color:#cfc6bd; }
+.light .editorial-strip p { color:#5e554e; }
+.gallery-final { display:grid; grid-template-columns:1.1fr .9fr 1fr; gap:16px; }
+.gallery-final img { width:100%; height:430px; object-fit:cover; border-radius:24px; }
+.gallery-final img:nth-child(2) { height:540px; margin-top:-50px; }
+.process-final { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:26px; }
+.process-final article { background:#fff; color:#111; border-radius:22px; padding:24px; min-height:190px; }
+.process-final strong { display:inline-flex; width:42px; height:42px; align-items:center; justify-content:center; background:#111; color:#fff; border-radius:99px; margin-bottom:16px; }
+.faq-final { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:24px; }
+.faq-final details { background:#fff; color:#111; border-radius:18px; padding:20px; }
+.faq-final summary { cursor:pointer; font-weight:800; }
+.faq-final p { margin:12px 0 0; color:#5b524b; }
+.cta-final { background:linear-gradient(135deg,#111,#27111f); border:1px solid rgba(255,255,255,.12); border-radius:30px; padding:42px; display:flex; align-items:center; justify-content:space-between; gap:24px; color:#fff; }
+.cta-final h2 { margin:0; font-size:clamp(32px,5vw,64px); line-height:.95; }
+.cta-final p { color:#d5c9bd; margin:10px 0 0; }
+@media(max-width:900px){
+  .page-depth{padding:64px 0}
+  .depth-grid,.gallery-final,.process-final,.faq-final{grid-template-columns:1fr}
+  .editorial-strip{display:flex; overflow-x:auto; gap:14px; scroll-snap-type:x mandatory; padding-bottom:14px}
+  .editorial-strip article{min-width:78vw; scroll-snap-align:start}
+  .gallery-final img,.gallery-final img:nth-child(2){height:420px; margin-top:0}
+  .process-final article{min-height:auto}
+  .cta-final{display:block; padding:28px}
+  .cta-final .hero-ctas{margin-top:20px}
+}
+
+
+/* === CORRECCIÓN UX/TIPOGRAFÍA 2026 PARA PÁGINAS DE TEXTO === */
+:root{--ux-cream:#f4efe8;--ux-ink:#111114;--ux-gold:#c7a15b;--ux-pink:#E026AB;--ux-card:#fff;--ux-dark:#0a0a0d;--ux-radius:28px;--ux-wrap:1180px}.page-hero h1,.hero h1{font-size:clamp(52px,8vw,112px);line-height:.86;letter-spacing:-.055em}.page-hero p,.hero p{font-size:clamp(17px,2vw,22px);line-height:1.5;max-width:720px}.section-head h2,.contact-band h2{font-size:clamp(38px,6vw,86px);line-height:.9}.ux-wrap{width:min(var(--ux-wrap),calc(100% - 40px));margin:0 auto}.ux-section{background:var(--ux-cream);color:var(--ux-ink);padding:clamp(72px,8vw,118px) 0}.ux-section h2{font-family:var(--display);font-weight:400;font-size:clamp(38px,5.6vw,78px);line-height:.92;letter-spacing:-.05em;margin:0 0 22px}.ux-section h3{font-family:var(--display);font-weight:400;font-size:clamp(26px,2.8vw,40px);line-height:1;margin:0 0 12px}.ux-section p,.ux-section li{font-size:18px;line-height:1.68;color:#50484d}.ux-kicker{display:inline-flex;align-items:center;gap:10px;margin:0 0 16px;color:var(--ux-pink);font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:800}.ux-kicker:before{content:'';display:block;width:38px;height:1px;background:currentColor}.ux-dark{background:linear-gradient(180deg,#0a0a0d,#161017);color:#fff}.ux-dark p,.ux-dark li{color:#d7ced3}.ux-two{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,5vw,70px);align-items:start}.ux-lead{font-size:clamp(20px,2.2vw,28px)!important;line-height:1.45!important;color:#201c1f!important}.ux-dark .ux-lead{color:#fff!important}.ux-list{display:grid;gap:12px;margin:24px 0 0;padding:0;list-style:none}.ux-list li{position:relative;padding:16px 18px 16px 44px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:18px}.ux-list li:before{content:'✓';position:absolute;left:18px;top:16px;color:var(--ux-pink);font-weight:900}.ux-panel{background:#fff;border-radius:var(--ux-radius);padding:clamp(24px,4vw,42px);box-shadow:0 20px 70px rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.08)}.ux-panel.dark,.ux-dark .ux-panel{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);color:#fff}.ux-panel.dark p,.ux-dark .ux-panel p{color:#d7ced3}.ux-link{display:inline-flex;margin-top:14px;color:var(--ux-pink);font-weight:800}.ux-card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.ux-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:24px;min-height:260px}.ux-card span{display:inline-flex;width:42px;height:42px;border-radius:50%;align-items:center;justify-content:center;background:var(--ux-pink);color:#fff;font-weight:900;margin-bottom:22px}.ux-card h3{font-size:clamp(24px,2.4vw,34px)}.ux-card p{color:#ddd1d9;font-size:16px}.ux-gallery{display:grid;grid-template-columns:1fr 1.18fr .82fr;gap:16px}.ux-gallery figure{margin:0;position:relative;overflow:hidden;border-radius:28px;background:#111;min-height:460px}.ux-gallery figure:nth-child(2){min-height:560px;margin-top:-42px}.ux-gallery img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(1.04)}.ux-gallery figcaption{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(0,0,0,.62);color:#fff;border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);border-radius:16px;padding:12px 14px;font-weight:700}.ux-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.ux-steps article{background:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 40px rgba(0,0,0,.06)}.ux-steps strong{display:inline-flex;width:44px;height:44px;border-radius:50%;background:#111;color:#fff;align-items:center;justify-content:center;margin-bottom:20px}.ux-guide{background:#fff}.ux-accordion{display:grid;gap:14px}.ux-accordion-item{border:1px solid rgba(0,0,0,.09);border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 10px 34px rgba(0,0,0,.04)}.ux-accordion-item button{width:100%;border:0;background:#fff;text-align:left;display:grid;grid-template-columns:60px 1fr 24px;align-items:center;gap:16px;padding:22px 24px;font-family:var(--display);font-size:clamp(22px,2.8vw,36px);line-height:1.05;cursor:pointer}.ux-accordion-item button span{font-family:var(--sans);font-size:14px;color:var(--ux-pink);font-weight:900}.ux-accordion-item button i{font-style:normal;color:var(--ux-pink)}.ux-accordion-content{display:none;padding:0 clamp(24px,4vw,54px) 32px}.ux-accordion-item.is-open .ux-accordion-content{display:block}.ux-accordion-content h4{font-family:var(--display);font-size:clamp(24px,2.6vw,36px);font-weight:400;margin:28px 0 10px}.ux-accordion-content p,.ux-accordion-content li{max-width:75ch}.ux-faq{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.ux-faq details{background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:20px;padding:22px}.ux-faq summary{cursor:pointer;font-weight:900;font-size:18px}.ux-faq p{margin-top:12px}.ux-cta{padding-top:40px}.ux-style-hero .media img{filter:grayscale(.06) contrast(1.1) brightness(.86)}
+@media(max-width:1100px){.ux-card-grid{grid-template-columns:repeat(2,1fr)}.ux-steps{grid-template-columns:repeat(2,1fr)}.ux-gallery{grid-template-columns:1fr 1fr}.ux-gallery figure:nth-child(2){margin-top:0}.ux-two{grid-template-columns:1fr}}
+@media(max-width:700px){.page-hero h1,.hero h1{font-size:clamp(44px,13vw,62px)}.ux-section{padding:58px 0}.ux-wrap{width:min(100% - 24px,var(--ux-wrap))}.ux-card-grid,.ux-steps,.ux-gallery,.ux-faq{grid-template-columns:1fr}.ux-gallery figure,.ux-gallery figure:nth-child(2){min-height:380px}.ux-accordion-item button{grid-template-columns:42px 1fr 22px;padding:18px;font-size:25px}.ux-accordion-content{padding:0 18px 26px}.ux-section p,.ux-section li{font-size:16px}.ux-lead{font-size:20px!important}.cta-final{display:block}.cta-final .hero-ctas{margin-top:18px}}
+
+/* AUTO-CONTENIDO V3: CSS incrustado + imágenes incrustadas. No depende de /assets. */
+html,body{width:100%;min-height:100%;}body{opacity:1!important;}img{max-width:100%;}
+@media(max-width:760px){.nav a{display:block}.hero-media img,.page-hero .media img{min-height:320px}.style-card img,.artist-card img{min-height:300px}.fixed-actions{z-index:9999}}
+
+
+/* SOLO cambios home solicitados: hero image + bloque negro + bloque Google */
+.hero-media{background:#000;overflow:hidden}
+.hero-media img{filter:contrast(1.04) brightness(.88) saturate(1.02)!important;object-position:center center!important;background:#000}
+
+.home-choice-redesign{background:#efebe7!important;color:#16151a!important;padding:96px 0 40px!important}
+.home-choice-redesign-wrap{width:min(1510px,calc(100% - 64px));margin:0 auto}
+.home-choice-kicker{display:inline-flex;align-items:center;gap:14px;margin:0 0 26px;color:#ef31bc;font-family:var(--sans);font-size:18px;line-height:1;letter-spacing:.14em;text-transform:uppercase;font-weight:900}
+.home-choice-kicker:before{content:'';display:block;width:48px;height:2px;background:currentColor}
+.home-choice-redesign h2{font-family:var(--sans)!important;font-weight:900!important;font-size:clamp(54px,5.8vw,110px)!important;line-height:.92!important;letter-spacing:-.08em!important;color:#131217!important;margin:0 0 28px!important;max-width:760px}
+.home-choice-redesign .home-choice-intro{font-family:var(--sans);font-size:clamp(18px,1.8vw,28px);line-height:1.56;color:#2e2a2e;max-width:1020px;margin:0 0 40px}
+.home-choice-black-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.home-choice-black-card{background:linear-gradient(180deg,#07040c,#090510);border-radius:36px;padding:34px 34px 30px;color:#fff;min-height:342px;box-shadow:0 0 0 1px rgba(255,255,255,.04) inset;display:flex;flex-direction:column}
+.home-choice-black-card .home-choice-num{display:inline-block;color:#ff38c6;font-family:var(--sans);font-size:24px;font-weight:900;line-height:1;margin-bottom:24px}
+.home-choice-black-card h3{font-family:var(--sans)!important;font-size:clamp(34px,3.2vw,58px)!important;line-height:.96!important;letter-spacing:-.08em!important;font-weight:900!important;color:#fff!important;margin:0 0 16px!important}
+.home-choice-black-card p{font-family:var(--sans);font-size:20px;line-height:1.6;color:#dad6db;margin:0 0 28px}
+.home-choice-black-card a{margin-top:auto;display:inline-flex;align-items:center;gap:14px;font-family:var(--sans);font-size:14px;text-transform:uppercase;letter-spacing:.18em;font-weight:900;color:#fff}
+.home-choice-black-card a:after{content:'→';color:#ff38c6;font-size:20px;line-height:1}
+
+.home-google-section{background:#efebe7!important;color:#1d1b1f!important;padding:94px 0 108px!important}
+.home-google-wrap{width:min(1510px,calc(100% - 64px));margin:0 auto}
+.home-google-head{display:grid;grid-template-columns:1.25fr .85fr;gap:54px;align-items:start;margin-bottom:42px}
+.home-google-head h2{font-family:var(--sans)!important;font-weight:900!important;font-size:clamp(54px,5.5vw,92px)!important;line-height:.94!important;letter-spacing:-.07em!important;color:#1d1b1f!important;margin:0 0 10px!important;max-width:900px}
+.home-google-head-main p,.home-google-head-side p{font-family:var(--sans);font-size:clamp(20px,1.75vw,28px);line-height:1.42;color:#625b5d;margin:0}
+.home-google-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr;gap:24px;align-items:stretch}
+.home-google-card{background:#fff;border-radius:34px;padding:28px;border:1px solid rgba(0,0,0,.04);min-height:378px}
+.home-google-summary{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:42px 34px}
+.home-google-logo{font-family:Arial,Helvetica,sans-serif;font-size:56px;font-weight:700;letter-spacing:-.06em;line-height:1;margin-bottom:22px}
+.home-google-logo .g-blue{color:#4285F4}.home-google-logo .g-red{color:#DB4437}.home-google-logo .g-yellow{color:#F4B400}.home-google-logo .g-green{color:#0F9D58}
+.home-google-stars{font-size:56px;line-height:1;color:#F4B400;letter-spacing:6px;margin:0 0 22px}
+.home-google-stars.small{font-size:34px;letter-spacing:4px;margin:0 0 24px}
+.home-google-summary strong{font-family:var(--sans);font-size:28px;line-height:1.05;letter-spacing:-.04em;font-weight:900;color:#1d1b1f;margin-bottom:12px}
+.home-google-summary small{font-family:var(--sans);font-size:20px;line-height:1.3;color:#6d6668}
+.home-google-review{display:flex;flex-direction:column}
+.home-google-top{display:flex;align-items:flex-start;gap:18px;margin-bottom:20px}
+.home-google-avatar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#17161a;color:#fff;font-family:var(--sans);font-size:18px;font-weight:900;flex:none}
+.home-google-meta{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0;padding-top:4px}
+.home-google-meta strong{font-family:var(--sans);font-size:24px;line-height:1.05;letter-spacing:-.04em;color:#232126}
+.home-google-meta span{font-family:var(--sans);font-size:16px;line-height:1.25;color:#6d6668}
+.home-google-g{font-family:var(--sans);font-size:20px;font-weight:900;color:#4285F4;line-height:1;padding-top:8px}
+.home-google-review p{font-family:var(--sans);font-size:18px;line-height:1.62;color:#474144;margin:0 0 28px}
+.home-google-review a{margin-top:auto;font-family:var(--sans);font-size:16px;color:#6a6466}
+
+@media (max-width: 1280px){
+  .home-choice-redesign-wrap,.home-google-wrap{width:min(100%,calc(100% - 44px))}
+  .home-google-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 980px){
+  .home-choice-redesign{padding:74px 0 30px!important}
+  .home-choice-black-grid{grid-template-columns:1fr;gap:18px}
+  .home-choice-black-card{min-height:unset}
+  .home-google-head{grid-template-columns:1fr;gap:18px}
+}
+@media (max-width: 720px){
+  .home-choice-redesign-wrap,.home-google-wrap{width:min(100%,calc(100% - 28px))}
+  .home-choice-kicker{font-size:14px;gap:12px;margin-bottom:20px}
+  .home-choice-kicker:before{width:38px}
+  .home-choice-redesign h2{font-size:clamp(42px,13vw,66px)!important;max-width:100%}
+  .home-choice-redesign .home-choice-intro{font-size:18px;line-height:1.5;margin-bottom:24px}
+  .home-choice-black-card{padding:28px 24px 26px;border-radius:28px}
+  .home-choice-black-card .home-choice-num{font-size:18px;margin-bottom:18px}
+  .home-choice-black-card h3{font-size:clamp(28px,10vw,44px)!important}
+  .home-choice-black-card p{font-size:18px;margin-bottom:24px}
+  .home-google-section{padding:74px 0 84px!important}
+  .home-google-head h2{font-size:clamp(42px,13vw,60px)!important;max-width:100%}
+  .home-google-head-main p,.home-google-head-side p{font-size:18px}
+  .home-google-grid{grid-template-columns:1fr;gap:16px}
+  .home-google-card{border-radius:24px;padding:22px;min-height:unset}
+  .home-google-summary{padding:32px 22px;min-height:300px}
+  .home-google-logo{font-size:48px}
+  .home-google-stars{font-size:44px;letter-spacing:4px}
+  .home-google-stars.small{font-size:28px;letter-spacing:3px;margin-bottom:18px}
+  .home-google-top{gap:14px;margin-bottom:16px}
+  .home-google-avatar{width:50px;height:50px;font-size:16px}
+  .home-google-meta strong{font-size:22px}
+  .home-google-review p{font-size:17px;line-height:1.56;margin-bottom:20px}
+}
+</style><meta content="inklab-v3-autocontenido" name="x-build"/>
+<style id="inklab-v4-home-menu-fix">
+/* V4: homepage UX + navegación desplegable por categorías */
+.header{z-index:120!important}.nav-v4{gap:18px!important}.nav-dd{position:relative;color:#f6e9f1}.nav-dd>summary{list-style:none;cursor:pointer;position:relative;color:#f6e9f1;text-transform:uppercase;letter-spacing:.12em;font-size:13px;padding:0 0 2px;display:flex;align-items:center;gap:8px}.nav-dd>summary::-webkit-details-marker{display:none}.nav-dd>summary:after{content:'⌄';font-size:15px;color:var(--pink);line-height:1;transition:.18s ease}.nav-dd[open]>summary:after{transform:rotate(180deg)}.nav-dd.active>summary,.nav-dd:hover>summary{color:#fff}.nav-dd>summary:before{content:'';position:absolute;left:0;right:0;bottom:-10px;height:1px;background:var(--pink);transform:scaleX(0);transform-origin:left;transition:.18s}.nav-dd.active>summary:before,.nav-dd:hover>summary:before,.nav-dd[open]>summary:before{transform:scaleX(1)}.dropdown-menu{position:absolute;top:calc(100% + 24px);left:50%;transform:translateX(-50%) translateY(8px);opacity:0;visibility:hidden;pointer-events:none;width:min(560px,calc(100vw - 38px));display:grid;grid-template-columns:repeat(2,1fr);gap:6px;background:rgba(5,5,5,.97);border:1px solid rgba(255,255,255,.13);box-shadow:0 22px 70px rgba(0,0,0,.44);border-radius:24px;padding:18px;z-index:140;backdrop-filter:blur(18px)}.nav-dd:hover .dropdown-menu,.nav-dd[open] .dropdown-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}.dropdown-menu a{position:relative!important;color:#f1e7ee!important;text-transform:none!important;letter-spacing:.01em!important;font-size:14px!important;padding:11px 12px!important;border-radius:14px!important}.dropdown-menu a:hover{background:rgba(224,38,171,.15)!important;color:#fff!important}.dropdown-menu a:after{display:none!important}.dropdown-main{grid-column:1/-1;background:linear-gradient(135deg,rgba(224,38,171,.2),rgba(255,14,218,.08));border:1px solid rgba(224,38,171,.25);font-weight:800!important}.quick-links{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}.quick-links a{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800}.ux-section .quick-links a,.page-hero .quick-links a{border-color:rgba(0,0,0,.12);background:#fff;color:#111}.quick-links a:hover{background:var(--pink);color:#fff}.home-choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.home-choice-card{background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:26px;padding:26px;box-shadow:0 12px 40px rgba(0,0,0,.05)}.home-choice-card span{display:inline-flex;color:var(--ux-pink);font-weight:900;margin-bottom:10px}.home-choice-card h3{font-family:var(--display);font-size:clamp(26px,2.8vw,42px);line-height:1;margin:0 0 12px}.home-choice-card p{font-size:16px;color:#50484d}.home-choice-card a{margin-top:8px}.home-faq-band{background:#fff}.home-faq-header{display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:start}.home-faq-intro{position:sticky;top:110px}.home-faq-intro p{color:#50484d;font-size:18px}.home-faq-list{display:grid;gap:14px}.home-faq-list details{background:#fff;border:1px solid rgba(0,0,0,.09);border-radius:22px;padding:0;overflow:hidden;box-shadow:0 10px 34px rgba(0,0,0,.04)}.home-faq-list summary{cursor:pointer;padding:22px 24px;font-weight:900;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}.home-faq-list summary::-webkit-details-marker{display:none}.home-faq-list summary:after{content:'+';color:var(--ux-pink);font-size:26px;line-height:1}.home-faq-list details[open] summary:after{content:'×'}.home-faq-list details p{padding:0 24px 22px;margin:0;color:#50484d;font-size:17px}.nav-index-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0 0}.nav-index-grid a{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:13px 14px;color:#fff;background:rgba(255,255,255,.05);font-weight:800}.nav-index-grid a:after{content:'→';color:var(--pink)}.ux-section .nav-index-grid a{color:#111;border-color:rgba(0,0,0,.1);background:#fff}.ux-section .nav-index-grid a:hover,.nav-index-grid a:hover{background:var(--pink);color:#fff}.nav-index-grid a:hover:after{color:#fff}
+@media(max-width:1000px){.nav-v4{align-items:stretch!important}.nav-dd{width:100%;border-bottom:1px solid var(--line)}.nav-dd>summary{padding:16px 0!important;color:#f6e9f1}.nav-dd>summary:before{display:none}.dropdown-menu{position:static;display:grid!important;grid-template-columns:1fr!important;width:100%;transform:none!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;background:rgba(255,255,255,.04);box-shadow:none;border-radius:16px;margin:0 0 12px;padding:10px;border-color:rgba(255,255,255,.08)}.nav-dd:not([open]) .dropdown-menu{display:none!important}.dropdown-menu a{padding:12px!important;border-radius:10px!important}.dropdown-main{background:rgba(224,38,171,.18)!important}.nav-index-grid{grid-template-columns:repeat(2,1fr)}.home-choice-grid{grid-template-columns:1fr}.home-faq-header{grid-template-columns:1fr}.home-faq-intro{position:static}.home-faq-list summary{font-size:17px}}
+@media(max-width:640px){.nav-index-grid{grid-template-columns:1fr}.quick-links a{width:100%;justify-content:space-between}.home-faq-list summary{padding:18px}.home-faq-list details p{padding:0 18px 18px}.ux-section h2{font-size:clamp(38px,11vw,58px)}}
+</style>
+<link rel="stylesheet" href="assets/css/inklab-safe-v10.css"/>
+<link rel="stylesheet" href="assets/css/inklab-editorial-responsive-v11.css">
+</head><body><div class="topbar"><div class="full"><div>Centro Comercial Plaza Aluche · Madrid</div><div><a href="tel:622030466">662 03 04 66</a> · <a href="mailto:inklabmadrid@gmail.com">inklabmadrid@gmail.com</a></div></div></div><header class="header"><div class="full head"><a class="logo" href="index.html"><img alt="INK LAB Madrid" src="assets/img/inklab_logo_new.webp"/></a><input class="nav-toggle" id="nav-toggle" type="checkbox"/><label aria-label="Abrir menú" class="hamb" for="nav-toggle"><span></span><span></span><span></span></label><nav aria-label="Navegación principal" class="nav nav-v4">
+<a class="active" href="index.html">Inicio</a>
+<details class="nav-dd"><summary>Tattoos</summary><div class="dropdown-menu"><a class="dropdown-main" href="tattoos.html">Ver todos los estilos</a><a href="black-grey.html">Black &amp; Grey</a><a href="blackwork.html">Blackwork</a><a href="blackout.html">Blackout</a><a href="realismo.html">Realismo</a><a href="realismo-bn.html">Realismo B/N</a><a href="realismo-color.html">Realismo color</a><a href="microrealismo-negro.html">Microrealismo negro</a><a href="fine-line.html">Fine Line</a><a href="neo-tradicional.html">Neo tradicional</a><a href="neo-tradicional-negro.html">Neo tradicional negro</a><a href="ornamental.html">Ornamental</a><a href="geometria.html">Geometría</a><a href="cover.html">Cover</a><a href="tradicional.html">Tradicional</a><a href="anime.html">Anime</a><a href="comic.html">Cómic</a><a href="lettering.html">Lettering</a></div></details>
+<details class="nav-dd"><summary>Piercing</summary><div class="dropdown-menu"><a class="dropdown-main" href="piercing.html">Ver todos los piercings</a><a href="piercing-avanzado-surface.html">Surface avanzado</a><a href="piercing-basico-oreja.html">Oreja</a><a href="piercing-basico-labio-lengua-frenillo.html">Labio, lengua y frenillo</a><a href="piercing-basico-nariz-ceja-pezon-ombligo.html">Nariz, ceja, pezón y ombligo</a><a href="piercing-genital-femenino.html">Genital femenino</a><a href="piercing-genital-masculino.html">Genital masculino</a></div></details>
+<a class="" href="studio.html">Studio</a>
+<a class="" href="equipo.html">Equipo</a>
+<a class="" href="contacto.html">Contacto</a>
+</nav><div class="head-actions"><a class="btn btn-dark" href="tel:622030466">Llamar</a><a class="btn btn-pink" href="contacto.html">Tatúate</a></div></div></header>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">Tattoo &amp; Piercing Studio Madrid</span><h1>La piel como <span class="script">lienzo</span></h1><p class="lead">Desde trazos finos hasta composiciones que cuentan historias, en InkLab Madrid entendemos el tatuaje como una forma de expresión atemporal.</p><div class="hero-ctas"><a class="btn btn-pink" href="contacto.html">Tatúate</a><a class="btn btn-dark" href="tattoos.html">Explorar estilos</a></div></div><div class="hero-media"><img alt="Patricia tatuando a un cliente en InkLab Madrid" src="assets/page-images/index/home-hero-estudio-tatuaje-lavapies.webp"/><div class="hero-stamp">No seguimos modas · creamos marca en piel</div></div><div class="scrollmark">Scroll</div></section>
+<section class="marquee"><div class="marquee-track"><span>ANIME <b>•</b> BLACKWORK <b>•</b> FINE LINE <b>•</b> REALISMO <b>•</b> COVER <b>•</b> PIERCING <b>•</b></span><span>ANIME <b>•</b> BLACKWORK <b>•</b> FINE LINE <b>•</b> REALISMO <b>•</b> COVER <b>•</b> PIERCING <b>•</b></span></div></section>
+<section class="section wine"><div class="container"><div class="section-head"><h2>Formas de expresión</h2><p>Reordenamos el catálogo visual para que el usuario encuentre rápido estilo, artista y forma de contacto.</p></div><div class="grid-4"><a class="style-card" href="cover.html"><img alt="Cover" src="assets/page-images/cover/cover-hero-cover-up-brazo.webp"/><div class="style-content"><div class="num">01</div><h3>Cover</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a><a class="style-card" href="tradicional.html"><img alt="Tradi" src="assets/page-images/tradicional/tradicional-hero-color-planos.webp"/><div class="style-content"><div class="num">02</div><h3>Tradi</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a><a class="style-card" href="anime.html"><img alt="Anime" src="assets/page-images/anime/anime-hero-tatuaje-manga-original.webp"/><div class="style-content"><div class="num">03</div><h3>Anime</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a><a class="style-card" href="comic.html"><img alt="Cómic" src="assets/page-images/comic/comic-hero-color-vineta-pop.webp"/><div class="style-content"><div class="num">04</div><h3>Cómic</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a><a class="style-card" href="neo-tradicional.html"><img alt="Neo Tradicional" src="assets/page-images/neo-tradicional/neo-tradicional-hero-color-premium.webp"/><div class="style-content"><div class="num">05</div><h3>Neo Tradicional</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a><a class="style-card" href="realismo-bn.html"><img alt="Realismo B/N" src="assets/page-images/realismo-bn/realismo-bn-hero-retrato-black-grey.webp"/><div class="style-content"><div class="num">06</div><h3>Realismo B/N</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a><a class="style-card" href="realismo-color.html"><img alt="Realismo Color" src="assets/page-images/realismo-color/realismo-color-hero-pieza-color.webp"/><div class="style-content"><div class="num">07</div><h3>Realismo Color</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a><a class="style-card" href="fine-line.html"><img alt="Fine Line" src="assets/page-images/fine-line/fine-line-hero-floral-minimal.webp"/><div class="style-content"><div class="num">08</div><h3>Fine Line</h3><p>Dirección artística cuidada, adaptación al cuerpo y asesoramiento previo.</p><span class="arrow">Ver estilo</span></div></a></div></div></section>
+<section class="section"><div class="container feature-layout"><div class="feature-img"><img alt="InkLab studio" src="assets/page-images/index/home-detalle-tatuaje-brazo-realismo.webp"/></div><div class="text-block"><div class="quote">“La piel recuerda lo que la mente olvida.”</div><p>El rediseño toma el color, tipografía y fotografía actual, pero lo lleva a una experiencia más editorial, oscura y magnética, alineada con el primer modelo visual Doartist.</p><div class="service-pill"><span>01</span> Tatuaje artístico y personalizado</div><div class="service-pill"><span>02</span> Piercing seguro y estético</div><div class="service-pill"><span>03</span> Micropigmentación, láser y gemas dentales</div></div></div></section>
+<section class="section light"><div class="container"><div class="section-head"><h2>Equipo residente</h2><p>El equipo gana protagonismo como prueba de confianza y como filtro natural para reservar.</p></div><div class="grid-3"><a class="artist-card" href="silvina.html"><img alt="Silvina" src="assets/img/Silvina-Micropigmentacion.webp"/><div class="artist-info"><small>Tatuador / Micropigmentación</small><h3>Silvina</h3><span class="arrow">Ver perfil</span></div></a><a class="artist-card" href="iria.html"><img alt="Iria" src="assets/img/Iria2.webp"/><div class="artist-info"><small>Tatuador</small><h3>Iria</h3><span class="arrow">Ver perfil</span></div></a><a class="artist-card" href="miguel.html"><img alt="Miguel" src="assets/img/Miguel-1.webp"/><div class="artist-info"><small>Tatuador</small><h3>Miguel</h3><span class="arrow">Ver perfil</span></div></a><a class="artist-card" href="angel.html"><img alt="Ángel" src="assets/page-images/equipo/equipo-artista-trabajando-realismo.webp"/><div class="artist-info"><small>Anillador</small><h3>Ángel</h3><span class="arrow">Ver perfil</span></div></a><a class="artist-card" href="maikel.html"><img alt="Maikel" src="assets/page-images/equipo/equipo-manos-maquina-tatuaje.webp"/><div class="artist-info"><small>Tatuador</small><h3>Maikel</h3><span class="arrow">Ver perfil</span></div></a><a class="artist-card" href="patricia.html"><img alt="Patricia" src="assets/page-images/equipo/equipo-consulta-diseno-cliente.webp"/><div class="artist-info"><small>Tatuador</small><h3>Patricia</h3><span class="arrow">Ver perfil</span></div></a></div></div></section>
+
+<section class="section home-google-section">
+<div class="home-google-wrap">
+<div class="home-google-head">
+<div class="home-google-head-main">
+<h2>Opiniones y reseñas de Google</h2>
+<p>Una prueba social visual, clara y estable en todas las páginas para reforzar confianza desde el primer vistazo.</p>
+</div>
+<div class="home-google-head-side">
+<p>Atención cercana, ambiente cuidado y una experiencia que transmite seguridad desde la primera toma de contacto.</p>
+</div>
+</div>
+<div class="home-google-grid">
+<article class="home-google-card home-google-summary">
+<div aria-label="Google" class="home-google-logo">
+<span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+</div>
+<div class="home-google-stars">★★★★★</div>
+<strong>EXCELENTE</strong>
+<small>Basado en 30 reseñas</small>
+</article>
+<article class="home-google-card home-google-review">
+<div class="home-google-top">
+<div class="home-google-avatar">MS</div>
+<div class="home-google-meta">
+<strong>Marta S.</strong>
+<span>03/2026</span>
+</div>
+<div class="home-google-g">G</div>
+</div>
+<div class="home-google-stars small">★★★★★</div>
+<p>Me ayudaron a aterrizar la idea con mucha claridad. El estudio transmite limpieza, calma y un nivel muy alto de detalle en todo el proceso.</p>
+<a href="https://www.google.com/search?q=INK+LAB+Madrid" rel="noopener" target="_blank">Leer la reseña</a>
+</article>
+<article class="home-google-card home-google-review">
+<div class="home-google-top">
+<div class="home-google-avatar">JR</div>
+<div class="home-google-meta">
+<strong>Javier R.</strong>
+<span>02/2026</span>
+</div>
+<div class="home-google-g">G</div>
+</div>
+<div class="home-google-stars small">★★★★★</div>
+<p>Muy buena experiencia de principio a fin. Te explican todo con honestidad y se nota criterio tanto en la parte artística como en la técnica.</p>
+<a href="https://www.google.com/search?q=INK+LAB+Madrid" rel="noopener" target="_blank">Leer la reseña</a>
+</article>
+<article class="home-google-card home-google-review">
+<div class="home-google-top">
+<div class="home-google-avatar">LC</div>
+<div class="home-google-meta">
+<strong>Lucía C.</strong>
+<span>01/2026</span>
+</div>
+<div class="home-google-g">G</div>
+</div>
+<div class="home-google-stars small">★★★★★</div>
+<p>La web ya deja claro el nivel del estudio y luego la cita confirma la sensación: trato cercano, muy buena atención y un resultado cuidado.</p>
+<a href="https://www.google.com/search?q=INK+LAB+Madrid" rel="noopener" target="_blank">Leer la reseña</a>
+</article>
+</div>
+</div>
+</section>
+
+
+<section class="ux-section home-choice-redesign">
+<div class="home-choice-redesign-wrap">
+<span class="home-choice-kicker">Cómo elegir</span>
+<h2>Tres caminos claros para reservar mejor</h2>
+<p class="home-choice-intro">Una capa de orientación para que el usuario no tenga que adivinar por dónde empezar. Puede entrar por estilo, por servicio o por duda abierta.</p>
+<div class="home-choice-black-grid">
+<article class="home-choice-black-card">
+<span class="home-choice-num">01</span>
+<h3>Ya sé el estilo</h3>
+<p>Acceso directo a estilos de tatuaje con páginas completas, ejemplos, proceso y FAQ.</p>
+<a href="tattoos.html">Ver estilos</a>
+</article>
+<article class="home-choice-black-card">
+<span class="home-choice-num">02</span>
+<h3>Quiero piercing</h3>
+<p>Categorías de piercing separadas por zona y complejidad para resolver dudas antes de reservar.</p>
+<a href="piercing.html">Ver piercings</a>
+</article>
+<article class="home-choice-black-card">
+<span class="home-choice-num">03</span>
+<h3>No lo tengo claro</h3>
+<p>Entrada de consulta para recibir orientación sobre artista, zona, tamaño y expectativas.</p>
+<a href="contacto.html">Pedir orientación</a>
+</article>
+</div>
+</div>
+</section>
+
+<section class="ux-section ux-guide home-faq-band"><div class="ux-wrap home-faq-header"><div class="home-faq-intro"><span class="ux-kicker">FAQ rápida</span><h2>Antes de reservar</h2><p>Bloque añadido en home para reducir fricción, mejorar confianza y resolver objeciones comunes antes del CTA.</p><div class="quick-links"><a href="tattoos.html">Estilos de tatuaje</a><a href="piercing.html">Tipos de piercing</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></div></div><div class="home-faq-list"><details open=""><summary>¿Puedo reservar si todavía no sé exactamente qué tatuaje quiero?</summary><p>Sí. Puedes enviar una idea general, zona aproximada y referencias. El equipo te orienta sobre estilo, tamaño y artista recomendado.</p></details><details><summary>¿Cómo sé qué estilo me conviene?</summary><p>La navegación por estilos te ayuda a filtrar. Cada página explica cuándo funciona, qué tener en cuenta y cómo preparar referencias.</p></details><details><summary>¿Los piercings tienen la misma curación?</summary><p>No. Depende de zona, anatomía y joyería. Por eso la sección de piercing separa los tipos y explica criterios básicos antes de reservar.</p></details><details><summary>¿Puedo llamar directamente?</summary><p>Sí. En móvil tienes el CTA fijo de llamada y reserva para contacto rápido sin volver al menú.</p></details></div></div></section>
+<section class="contact-band"><div><h2>Contáctanos por <span class="script">aquí</span></h2><p class="lead">Reserva cita, pide valoración o ven directamente a vernos al Centro Comercial Plaza Aluche.</p></div><div class="contact-actions"><a href="tel:622030466"><span>Teléfono</span><strong>662 03 04 66</strong></a><a href="mailto:inklabmadrid@gmail.com"><span>Email</span><strong>inklabmadrid@gmail.com</strong></a><a href="contacto.html"><span>Dirección</span><strong>Centro Comercial Plaza Aluche</strong></a></div></section>
+<footer class="footer"><div class="footer-grid"><div><img alt="INK LAB" src="assets/img/inklab_logo_new.webp"/><p>InkLab Madrid. Tatuaje, piercing y tratamientos especializados con una dirección visual más oscura, editorial y premium.</p></div><div><h4>Tattoos</h4><a href="anime.html">Anime</a><a href="blackwork.html">BlackWork</a><a href="fine-line.html">Fine Line</a><a href="realismo-bn.html">Realismo B/N</a></div><div><h4>Studio</h4><a href="studio.html">El estudio</a><a href="equipo.html">Equipo</a><a href="piercing.html">Piercing</a><a href="tratamientos.html">Tratamientos</a></div><div><h4>Contacto</h4><a href="tel:622030466">662 03 04 66</a><a href="mailto:inklabmadrid@gmail.com">inklabmadrid@gmail.com</a><a href="contacto.html">Centro Comercial Plaza Aluche</a></div></div><div class="bottom"><span>© INK LAB Madrid</span><span>Diseño conceptual basado en la identidad actual y referencia Doartist</span></div></footer><div class="fixed-actions"><a class="btn btn-pink" href="contacto.html">Reservar</a><a class="btn btn-dark" href="tel:622030466">Llamar</a></div><script id="inklab-v3-inline-js">document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{const t=document.querySelector('#nav-toggle'); if(t) t.checked=false;}));
+
+document.querySelectorAll('.ux-accordion-item > button').forEach(btn=>{btn.addEventListener('click',()=>{btn.parentElement.classList.toggle('is-open')})});
+
+// V4 dropdown navigation
+(function(){
+  const nav = document.querySelector('.nav-v4');
+  if(!nav) return;
+  const details = nav.querySelectorAll('details.nav-dd');
+  details.forEach(d=>{
+    d.addEventListener('toggle',()=>{ if(d.open){ details.forEach(o=>{ if(o!==d) o.removeAttribute('open'); }); }});
+  });
+  document.addEventListener('click',(e)=>{ if(!nav.contains(e.target)){ details.forEach(d=>d.removeAttribute('open')); }});
+})();
+</script><script src="assets/js/inklab-menu-v10.js"></script>
+<script src="assets/js/inklab-responsive-v11.js"></script>
+</body></html>

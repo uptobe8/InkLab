@@ -1,0 +1,122 @@
+/* INK LAB V11 · Tipografía editorial + responsive UX sin tocar estructura PC */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Marcellus&family=Manrope:wght@300;400;500&display=swap');
+:root{
+  --inklab-pink:#E026AB;
+  --inklab-font-hero:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --inklab-font-h2:'Marcellus', Georgia, 'Times New Roman', serif;
+  --inklab-font-body:'Manrope', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --inklab-h1:clamp(42px,5vw,72px);
+  --inklab-h2:clamp(28px,3vw,44px);
+  --inklab-h3:clamp(20px,1.75vw,28px);
+  --inklab-body:clamp(15.8px,.34vw + 14.8px,17.2px);
+}
+html{scroll-behavior:smooth!important;-webkit-text-size-adjust:100%;}
+body,button,input,textarea,select,a,p,li,span,small,strong,summary,details,.btn,.nav a,.nav-dd>summary,.dropdown-menu a{
+  font-family:var(--inklab-font-body)!important;
+}
+body{font-weight:300!important;line-height:1.62!important;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased;}
+h1,.hero h1,.page-hero h1,.ux-style-hero h1,.surface-hero h1,.contact-band h2,.cta-final h2,.surface-cta h2{
+  font-family:var(--inklab-font-hero)!important;
+  font-weight:400!important;
+  font-size:var(--inklab-h1)!important;
+  line-height:1.04!important;
+  letter-spacing:.012em!important;
+  text-transform:uppercase!important;
+  text-wrap:balance;
+}
+h2,.section-head h2,.ux-section h2,.page-depth h2,.depth-copy h2,.depth-panel h2,.surface-section h2,.surface-parallax h2,.home-choice-redesign h2,.home-google-head h2,.home-faq-intro h2{
+  font-family:var(--inklab-font-h2)!important;
+  font-weight:400!important;
+  font-size:var(--inklab-h2)!important;
+  line-height:1.14!important;
+  letter-spacing:.05em!important;
+  text-transform:uppercase!important;
+  text-wrap:balance;
+}
+h3,.style-content h3,.artist-info h3,.copy-card h3,.ux-section h3,.ux-card h3,.ux-steps h3,.surface-card h3,.surface-step h3,.surface-section h3,.home-choice-black-card h3,.home-choice-card h3,.treatment h3{
+  font-family:var(--inklab-font-h2)!important;
+  font-weight:400!important;
+  font-size:var(--inklab-h3)!important;
+  line-height:1.2!important;
+  letter-spacing:.035em!important;
+  text-transform:uppercase!important;
+}
+p,li,.lead,.hero p,.page-hero p,.section-head p,.ux-section p,.ux-section li,.page-depth p,.text-block p,.surface-section p,.surface-section li,.surface-lead,.surface-parallax p,.surface-faq p,.home-choice-intro,.home-choice-black-card p,.home-choice-card p,.home-google-head-main p,.home-google-head-side p,.review p,.review-card p,.style-content p,.artist-info p,.footer p,.footer a{
+  font-family:var(--inklab-font-body)!important;
+  font-size:var(--inklab-body)!important;
+  font-weight:300!important;
+  line-height:1.68!important;
+  letter-spacing:-.006em!important;
+}
+.nav a,.nav-dd>summary,.dropdown-main,.btn,.arrow,.eyebrow,.kicker,.ux-kicker,.home-choice-kicker,.marquee-track,.topbar,.top-contact,.top-social a{
+  font-family:var(--inklab-font-body)!important;
+  font-weight:400!important;
+  text-transform:uppercase!important;
+  letter-spacing:.2em!important;
+}
+.eyebrow,.kicker,.ux-kicker,.home-choice-kicker{font-size:11px!important;line-height:1.15!important;color:var(--inklab-pink)!important;}
+.nav a,.nav-dd>summary{font-size:12px!important;line-height:1.1!important;}
+.btn,.arrow{font-size:10.5px!important;min-height:42px!important;padding-inline:18px!important;}
+.hero,.page-hero,.surface-hero{min-height:auto!important;}
+.hero-copy,.page-hero .copy,.surface-hero .copy{padding-top:clamp(42px,6vw,86px)!important;padding-bottom:clamp(42px,5vw,76px)!important;}
+.hero h1,.page-hero h1,.surface-hero h1{max-width:860px!important;margin-bottom:clamp(18px,2vw,28px)!important;}
+.hero p,.page-hero p,.surface-hero p,.lead{max-width:66ch!important;}
+.quote,.feature-layout .quote{font-family:var(--inklab-font-hero)!important;font-weight:400!important;font-size:clamp(36px,4.4vw,64px)!important;line-height:1.04!important;letter-spacing:.006em!important;text-transform:none!important;}
+.script{font-family:var(--inklab-font-hero)!important;font-style:italic!important;font-weight:400!important;}
+.style-content .num,.home-choice-num,.surface-card span,.surface-step strong,.ux-card span,.ux-steps strong{font-family:var(--inklab-font-body)!important;font-weight:400!important;}
+.surface-card,.surface-step,.ux-card,.ux-steps article,.editorial-strip article,.process-final article,.home-choice-black-card,.home-choice-card,.style-card,.review-card,.review,.copy-card{border-radius:clamp(18px,1.8vw,28px)!important;}
+.surface-card p,.surface-step p,.ux-card p,.ux-steps p,.editorial-strip p,.process-final p{font-size:15.5px!important;line-height:1.62!important;}
+@media (min-width:1181px){
+  .grid-4,.ux-card-grid,.ux-steps,.process-final,.surface-card-grid.four,.surface-steps{grid-template-columns:repeat(4,minmax(0,1fr))!important;}
+  .grid-3,.home-choice-black-grid,.home-choice-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;}
+}
+@media (max-width:1100px){
+  :root{--inklab-h1:clamp(36px,5.6vw,58px);--inklab-h2:clamp(26px,3.8vw,38px);--inklab-h3:clamp(19px,2.4vw,25px);}
+  .hero,.page-hero,.surface-hero,.feature-layout,.reviews,.studio-split,.contact-band,.content-grid,.depth-grid,.ux-two,.surface-two{grid-template-columns:1fr!important;}
+  .grid-4,.ux-card-grid,.ux-steps,.process-final,.surface-card-grid,.surface-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+}
+@media (max-width:760px){
+  :root{--inklab-h1:clamp(31px,8.6vw,40px);--inklab-h2:clamp(24px,6.8vw,32px);--inklab-h3:clamp(18px,5.2vw,22px);--inklab-body:15.8px;}
+  body{overflow-x:hidden!important;}
+  .full,.container,.ux-wrap{width:100%!important;max-width:none!important;padding-left:22px!important;padding-right:22px!important;margin-left:0!important;margin-right:0!important;}
+  .hero,.page-hero,.surface-hero{display:grid!important;grid-template-columns:1fr!important;gap:24px!important;padding-top:22px!important;padding-bottom:34px!important;}
+  .hero-copy,.page-hero .copy,.surface-hero .copy{padding:28px 22px 12px!important;}
+  .hero-media,.page-hero .media,.surface-hero .media{min-height:300px!important;margin-left:22px!important;margin-right:22px!important;border-radius:22px!important;overflow:hidden!important;}
+  .section,.ux-section,.page-depth,.surface-section,.contact-band{padding-top:52px!important;padding-bottom:52px!important;}
+  .hero h1,.page-hero h1,.surface-hero h1{line-height:1.08!important;letter-spacing:.01em!important;}
+  h2,.section-head h2,.ux-section h2,.surface-section h2,.home-choice-redesign h2{max-width:100%!important;}
+  .btn{min-height:42px!important;font-size:10px!important;}
+  .hero-ctas{display:flex!important;gap:10px!important;}
+  .hero-ctas .btn{flex:1 1 140px!important;min-width:0!important;}
+  .grid-3,.grid-4,.ux-card-grid,.ux-steps,.editorial-strip,.process-final,.review-grid,.reviews-grid,.nav-index-grid,.home-choice-black-grid,.home-choice-grid,.surface-card-grid,.surface-steps,.surface-gallery,.google-reviews,.review-track,.ux-gallery{
+    display:flex!important;
+    grid-template-columns:none!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    gap:14px!important;
+    scroll-snap-type:x mandatory!important;
+    -webkit-overflow-scrolling:touch!important;
+    padding-left:22px!important;
+    padding-right:22px!important;
+    margin-left:-22px!important;
+    margin-right:-22px!important;
+    padding-bottom:16px!important;
+    scrollbar-width:none!important;
+  }
+  .grid-3::-webkit-scrollbar,.grid-4::-webkit-scrollbar,.ux-card-grid::-webkit-scrollbar,.ux-steps::-webkit-scrollbar,.editorial-strip::-webkit-scrollbar,.process-final::-webkit-scrollbar,.review-grid::-webkit-scrollbar,.reviews-grid::-webkit-scrollbar,.nav-index-grid::-webkit-scrollbar,.home-choice-black-grid::-webkit-scrollbar,.home-choice-grid::-webkit-scrollbar,.surface-card-grid::-webkit-scrollbar,.surface-steps::-webkit-scrollbar,.surface-gallery::-webkit-scrollbar,.google-reviews::-webkit-scrollbar,.review-track::-webkit-scrollbar,.ux-gallery::-webkit-scrollbar{display:none!important;}
+  .grid-3>*,.grid-4>*,.ux-card-grid>*,.ux-steps>*,.editorial-strip>*,.process-final>*,.review-grid>*,.reviews-grid>*,.nav-index-grid>*,.home-choice-black-grid>*,.home-choice-grid>*,.surface-card-grid>*,.surface-steps>*,.surface-gallery>*,.google-reviews>*,.review-track>*,.ux-gallery>*{
+    flex:0 0 min(82vw,340px)!important;
+    min-width:min(82vw,340px)!important;
+    scroll-snap-align:start!important;
+  }
+  .style-card,.artist-card,.ux-card,.ux-steps article,.surface-card,.surface-step,.home-choice-black-card,.home-choice-card,.review-card,.review,.editorial-strip article,.process-final article{min-height:clamp(250px,64vw,360px)!important;}
+  .ux-gallery figure,.surface-gallery figure,.surface-gallery figure:nth-child(2){min-height:360px!important;height:auto!important;margin-top:0!important;margin-left:0!important;margin-right:0!important;}
+  .fixed-actions{left:14px!important;right:14px!important;bottom:12px!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;z-index:900!important;}
+  body{padding-bottom:82px!important;}
+}
+@media (max-width:380px){
+  :root{--inklab-h1:clamp(29px,8.4vw,36px);--inklab-h2:clamp(22px,6.5vw,28px);--inklab-body:15.4px;}
+  .full,.container,.ux-wrap,.hero-copy,.page-hero .copy,.surface-hero .copy{padding-left:18px!important;padding-right:18px!important;}
+  .hero-media,.page-hero .media,.surface-hero .media{margin-left:18px!important;margin-right:18px!important;}
+  .grid-3,.grid-4,.ux-card-grid,.ux-steps,.editorial-strip,.process-final,.review-grid,.reviews-grid,.nav-index-grid,.home-choice-black-grid,.home-choice-grid,.surface-card-grid,.surface-steps,.surface-gallery,.google-reviews,.review-track,.ux-gallery{padding-left:18px!important;padding-right:18px!important;margin-left:-18px!important;margin-right:-18px!important;}
+}
