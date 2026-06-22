@@ -276,42 +276,33 @@ h1,h2,h3,h4,h5,h6,.quote,.section-head h2,.text h2,.text-block h2,.page-hero h1,
 strong,b{font-weight:400!important;}
 </style>
 <style id="inklab-v22-logo-fit">.brand img{width:108px!important;height:auto!important;object-fit:contain}.footer img{width:148px!important;height:auto!important;object-fit:contain}</style>
-<style id="inklab-v24-textos-grandes-mas-pequenos">
-/* V24: ajuste único de tamaño para textos grandes. No modifica estructura, módulos, imágenes ni secciones. */
-body h1,
-body .hero h1,
-body .page-hero h1,
-body [class*="hero"] h1 {
-  font-size: clamp(42px, 6.6vw, 104px) !important;
-  line-height: .92 !important;
+<style id="inklab-v25-mobile-menu-fix">
+/* V25 — SOLO MENÚ MÓVIL: overlay limpio, sin solaparse con logo, Madrid ni botón. Escritorio intacto. */
+@media (max-width:1040px){
+  .site-header{position:sticky!important;top:0!important;z-index:99999!important;height:auto!important;overflow:visible!important;background:#000!important;border-bottom:1px solid var(--ink-gold)!important;}
+  .navbar{height:82px!important;min-height:82px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;position:relative!important;}
+  .brand{min-width:0!important;max-width:calc(100% - 132px)!important;display:flex!important;align-items:center!important;gap:14px!important;position:relative!important;z-index:100002!important;overflow:hidden!important;}
+  .brand img{width:112px!important;max-width:112px!important;max-height:70px!important;height:auto!important;object-fit:contain!important;display:block!important;flex:0 0 auto!important;}
+  .brand span{display:inline-block!important;position:static!important;transform:none!important;margin:0!important;white-space:nowrap!important;color:var(--ink-gold)!important;font-size:13px!important;line-height:1!important;letter-spacing:.16em!important;opacity:.95!important;}
+  .nav-toggle{display:inline-flex!important;align-items:center!important;justify-content:center!important;position:relative!important;z-index:100003!important;margin-left:auto!important;width:auto!important;min-width:104px!important;height:48px!important;padding:0 21px!important;border:1px solid var(--ink-gold)!important;background:#080808!important;color:#fff!important;font-size:13px!important;letter-spacing:.13em!important;line-height:1!important;text-transform:uppercase!important;}
+  .primary-nav{position:fixed!important;left:0!important;right:0!important;top:82px!important;bottom:0!important;width:100vw!important;height:calc(100svh - 82px)!important;max-height:none!important;margin:0!important;padding:22px 26px calc(34px + env(safe-area-inset-bottom))!important;background:#000!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:0!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;z-index:100001!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important;transform:translateY(-10px)!important;transition:opacity .22s ease,transform .22s ease,visibility .22s ease!important;border-top:1px solid rgba(184,155,94,.45)!important;}
+  .primary-nav.open{opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:translateY(0)!important;}
+  .primary-nav>li{width:min(100%,520px)!important;display:block!important;position:relative!important;text-align:center!important;margin:0!important;padding:0!important;}
+  .primary-nav>li>a,.primary-nav .drop-trigger{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:auto!important;min-height:62px!important;padding:0!important;margin:0!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.10)!important;background:transparent!important;color:rgba(255,255,255,.88)!important;font-size:15px!important;line-height:1.1!important;letter-spacing:.18em!important;text-transform:uppercase!important;text-align:center!important;}
+  .primary-nav>li>a:hover,.primary-nav>li>a.active,.primary-nav .drop-trigger:hover{color:#fff!important;background:transparent!important;}
+  .primary-nav>li>a::before,.primary-nav>li>a::after,.primary-nav .drop-trigger::before,.primary-nav .drop-trigger::after{display:none!important;content:none!important;}
+  .has-dropdown .dropdown{position:static!important;display:block!important;opacity:1!important;visibility:visible!important;transform:none!important;pointer-events:auto!important;min-width:0!important;width:100%!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0 0 10px!important;margin:0!important;}
+  .has-dropdown .dropdown a{display:block!important;width:100%!important;padding:10px 0!important;margin:0!important;text-align:center!important;border:0!important;color:var(--ink-gold)!important;background:transparent!important;font-size:12px!important;letter-spacing:.14em!important;line-height:1.2!important;}
+  body.inklab-menu-open{overflow:hidden!important;touch-action:none!important;}
 }
-body h2,
-body .section-head h2,
-body .text h2,
-body .quote,
-body [class*="title"],
-body [class*="headline"] {
-  font-size: clamp(30px, 4.2vw, 62px) !important;
-  line-height: 1 !important;
-}
-body h3,
-body .card h3,
-body .team-card h3,
-body .comic-panel h3,
-body .service-card h3,
-body .info-card h3 {
-  font-size: clamp(19px, 2vw, 30px) !important;
-  line-height: 1.08 !important;
-}
-body .lead,
-body .hero .lead,
-body .page-hero .lead {
-  font-size: clamp(17px, 1.55vw, 22px) !important;
-  line-height: 1.48 !important;
-}
-@media (max-width: 700px){
-  body h1, body .hero h1, body .page-hero h1, body [class*="hero"] h1{font-size:clamp(36px, 11vw, 58px) !important;}
-  body h2, body .section-head h2, body .text h2, body .quote, body [class*="title"], body [class*="headline"]{font-size:clamp(28px, 8vw, 46px) !important;}
+@media (max-width:430px){
+  .navbar{height:78px!important;min-height:78px!important;}
+  .brand{max-width:calc(100% - 118px)!important;gap:10px!important;}
+  .brand img{width:104px!important;max-width:104px!important;max-height:66px!important;}
+  .brand span{font-size:12px!important;letter-spacing:.13em!important;}
+  .nav-toggle{min-width:96px!important;height:46px!important;padding:0 17px!important;font-size:12px!important;}
+  .primary-nav{top:78px!important;height:calc(100svh - 78px)!important;padding-top:18px!important;}
+  .primary-nav>li>a,.primary-nav .drop-trigger{min-height:58px!important;font-size:14px!important;letter-spacing:.17em!important;}
 }
 </style>
 </head><body><header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img alt="INKLAB" decoding="async" src="assets/img/inklab-logo-tattoo-piercing.png"/><span>Madrid</span></a><button class="nav-toggle" type="button">Menú</button><ul class="primary-nav"><li><a class="" href="index.html">Inicio</a></li><li class="has-dropdown"><a class="" href="estudio.html">Estudio</a><div class="dropdown"><a href="equipo.html">Equipo</a><a href="nuestra-aventura.html">Nuestra aventura</a></div></li><li><a class="" href="tatuajes.html">Tatuajes</a></li><li><a class="" href="piercing.html">Piercings</a></li><li><a class="" href="laser.html">Láser</a></li><li><a class="active" href="micropigmentacion.html">Micro</a></li><li><a class="" href="gemas-dentales.html">Gemas</a></li><li><a class="" href="eventos-congresos.html">Eventos</a></li><li><a class="" href="faq.html">FAQ</a></li><li><a class="" href="blog.html">Blog</a></li><li><a class="" href="contacto.html">Contacto</a></li></ul></div></header><section class="page-hero"><img alt="Micropigmentación" decoding="async" loading="lazy" src="assets/img/micro-1.jpg"/><div class="wrap"><div class="crumb"><a href="index.html">Inicio</a> / Micropigmentación</div><h1>Micropigmentación</h1><p class="lead">Micropigmentación de cejas, labios, eyeliner y capilar con acabado limpio.</p></div></section><section class="section"><div class="wrap service-spotlight"><div class="text reveal"><p class="eyebrow">Micropigmentación INKLAB</p><h2>Diseño facial limpio, medido y natural.</h2><p>La micropigmentación exige precisión, lectura del rostro y una decisión estética equilibrada. El objetivo no es endurecer facciones, sino acompañar la expresión y mejorar la definición de forma elegante.</p><p>Trabajamos cejas, labios, eyeliner y micropigmentación capilar con una planificación previa: forma, intensidad, tono, simetría y mantenimiento.</p><div class="btn-row"><a class="btn gold" href="contacto.html#cita">Pedir valoración</a><a class="btn ghost" href="#zonas-micro">Ver zonas</a></div></div><div class="visual-board reveal"><figure><img alt="Micropigmentación de cejas en Madrid" decoding="async" loading="lazy" src="assets/img/micro-4.jpg"/><figcaption>Cejas</figcaption></figure><figure><img alt="Micropigmentación de labios" decoding="async" loading="lazy" src="assets/img/micro-8.jpg"/><figcaption>Labios</figcaption></figure><figure><img alt="Micropigmentación estética" decoding="async" loading="lazy" src="assets/img/micro-10.jpg"/><figcaption>Detalle</figcaption></figure></div></div></section><section class="section black" id="zonas-micro"><div class="wrap"><div class="section-head reveal"><h2>Zonas de trabajo.</h2><p>Cada zona requiere una lectura distinta del rostro, del tono de piel y del resultado que se busca.</p></div><div class="service-points"><article class="reveal"><strong>01</strong><h3>Cejas</h3><p>Diseño para aportar definición, corregir asimetrías y conseguir una estructura más limpia sin perder naturalidad.</p></article><article class="reveal"><strong>02</strong><h3>Labios</h3><p>Trabajo de color y contorno suave para mejorar presencia, armonía y lectura del labio.</p></article><article class="reveal"><strong>03</strong><h3>Eyeliner</h3><p>Definición de mirada con una línea discreta, estable y adaptada a la forma del ojo.</p></article><article class="reveal"><strong>04</strong><h3>Capilar</h3><p>Efecto visual de densidad en zonas concretas, siempre con valoración previa y diseño personalizado.</p></article></div><div class="square-flow reveal"><figure><img alt="Micropigmentación INKLAB" loading="lazy" src="assets/img/micro-1.jpg"/><span>Diseño</span></figure><figure><img alt="Resultado micropigmentación" loading="lazy" src="assets/img/micro-5.jpg"/><span>Precisión</span></figure><figure><img alt="Micropigmentación natural" loading="lazy" src="assets/img/micro-9.jpg"/><span>Natural</span></figure><figure><img alt="Micropigmentación estética Madrid" loading="lazy" src="assets/img/micro-6.jpg"/><span>Detalle</span></figure></div></div></section><section class="section gray"><div class="wrap"><div class="service-band reveal"><h2>Micropigmentación en Madrid con criterio estético.</h2><div><p>Antes de trabajar se estudia la forma, la proporción y la intensidad adecuada para cada persona. Un buen resultado no debe parecer impuesto: debe integrarse con el rostro.</p><p>La técnica se adapta al objetivo: redensificar, perfilar, equilibrar, corregir o aportar presencia sin perder naturalidad.</p><p>También explicamos la evolución del color, los cuidados posteriores y cuándo puede ser necesario un repaso.</p></div></div><div class="process-grid reveal"><article class="process-card"><h3>Diseño previo.</h3><p>La decisión más importante está antes de pigmenta: forma, tono, simetría y nivel de intensidad.</p></article><article class="process-card"><h3>Resultado progresivo.</h3><p>El color evoluciona durante la cicatrización, por eso se trabaja con planificación y seguimiento.</p></article></div></div></section>
@@ -342,4 +333,42 @@ body .page-hero .lead {
   const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}), {threshold:.12});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 })();
-</script></body></html>
+</script>
+<script id="inklab-v25-mobile-menu-js">
+(() => {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.primary-nav');
+  if (!toggle || !nav) return;
+  const sync = () => document.body.classList.toggle('inklab-menu-open', nav.classList.contains('open'));
+  toggle.setAttribute('aria-controls','main-menu');
+  toggle.setAttribute('aria-expanded', nav.classList.contains('open') ? 'true' : 'false');
+  nav.id = nav.id || 'main-menu';
+  toggle.addEventListener('click', () => setTimeout(() => {
+    const open = nav.classList.contains('open');
+    document.body.classList.toggle('inklab-menu-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }, 0));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    if (window.matchMedia('(max-width:1040px)').matches) {
+      nav.classList.remove('open');
+      document.body.classList.remove('inklab-menu-open');
+      toggle.setAttribute('aria-expanded','false');
+    }
+  }));
+  window.addEventListener('resize', () => {
+    if (!window.matchMedia('(max-width:1040px)').matches) {
+      nav.classList.remove('open');
+      document.body.classList.remove('inklab-menu-open');
+      toggle.setAttribute('aria-expanded','false');
+    }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      nav.classList.remove('open');
+      document.body.classList.remove('inklab-menu-open');
+      toggle.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+</body></html>
