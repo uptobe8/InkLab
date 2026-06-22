@@ -1,6 +1,0 @@
-V14 revisada
-Video hero: assets/video/inklab-tattoo-hero.mp4
-Poster hero: assets/video/inklab-tattoo-hero-poster.jpg
-Hero text left aligned, no right card
-No repeated identical photo inside the same home section
-Clean sans typography, no serif/formitas
