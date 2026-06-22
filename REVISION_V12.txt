@@ -1,0 +1,1 @@
+V12 comprobada: tipografia sans premium sin serif, menu superior alineado, hero sin cuadro derecho, base64 eliminado, imagen hero estatica, assets optimizados, enlaces y assets locales sin roturas.
