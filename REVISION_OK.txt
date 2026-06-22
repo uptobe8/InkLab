@@ -1,0 +1,1 @@
+OK v22: base v21/InkLab-main aprobada. Cambios aplicados: logo nuevo, sección Decisión de Home ajustada, galería de clínica añadida antes del footer en páginas de servicio. Sin otros cambios estructurales intencionados. 0 assets rotos, 0 enlaces internos rotos.
