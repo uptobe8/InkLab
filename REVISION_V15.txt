@@ -1,0 +1,1 @@
+V15: tipografía delgada sans-serif aplicada globalmente. Sin serif, sin Optima, Didot ni Bodoni. Video hero conservado. Hero texto izquierda. Cuadro derecho eliminado.

@@ -1,0 +1,1 @@
+V13: tipografia sans limpia y fina aplicada en toda la web; video hero restaurado con preload metadata; cuadro derecho del hero eliminado; equipo ampliado con contenido de posicionamiento; paginas cortas ampliadas con contenido real; revision local con navegador y enlaces realizada.
