@@ -1,5 +1,0 @@
-Corrección V6
-HTML procesados: 38
-Carpetas de assets usadas: 33
-Referencias faltantes detectadas: 0
-Sin imágenes/recursos locales rotos detectados.

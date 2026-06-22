@@ -1,9 +1,0 @@
-Cambios realizados:
-- Añadido piercing-basico-oreja.html.
-- piercing-basico-labio-lengua-frenillo.html queda como redirección a piercing-labio-lengua-frenillo.html para evitar duplicado.
-- Añadida redirección piercing-nariz-ceja-pezon-ombligo.html hacia piercing-basico-nariz-ceja-pezon-ombligo.html.
-- Actualizada piercing.html como página madre de piercings con enlaces definitivos y copy más limpio.
-- Corregidas rutas de imágenes de landings de piercing a carpetas existentes dentro de assets/page-images.
-- Corregido JS de fallback de imágenes.
-- Aplicada escala tipográfica responsive 2026 manteniendo Cormorant Garamond, Marcellus y Manrope.
-Generado: 2026-04-26 23:46:36

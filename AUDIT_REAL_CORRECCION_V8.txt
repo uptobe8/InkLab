@@ -1,9 +1,0 @@
-Corrección real V8 aplicada sobre el paquete:
-- Todos los HTML enlazan assets/css/inklab-real-final-v8.css al final del <head>.
-- Todos los HTML enlazan assets/js/inklab-mobile-menu-real-fix-v8.js antes de </body>.
-- Tipografías forzadas: Cormorant Garamond, Marcellus y Manrope.
-- Escala tipográfica reducida y fluida para escritorio, tablet y móvil.
-- Menú móvil cerrado por defecto, abre con hamburguesa y mantiene enlaces clicables.
-- Header-actions duplicado oculto por CSS para evitar botones repetidos.
-- Grids de cuatro cajas: 4 columnas escritorio, 2 tablet, carrusel móvil.
-- Padding móvil reforzado y carruseles mantenidos solo en móvil.
