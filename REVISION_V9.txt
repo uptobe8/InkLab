@@ -1,0 +1,78 @@
+{
+  "created_at_epoch": 1782145807,
+  "folder": "/mnt/data/inklab_web_v9_scroll_comic_gallery",
+  "changes": [
+    "nuestra aventura comic-page panels",
+    "tattoo piercing infinite-scroll strips",
+    "home final studio gallery"
+  ],
+  "broken": [
+    [
+      "nuestra-aventura.html",
+      "img",
+      "assets/img/equipo-real-1.jpg"
+    ]
+  ],
+  "bad_terms": [
+    [
+      "index.html",
+      "carrusel horizontal para"
+    ],
+    [
+      "index.html",
+      "parrilla infinita"
+    ],
+    [
+      "index.html",
+      "seo"
+    ],
+    [
+      "tatuajes.html",
+      "seo"
+    ],
+    [
+      "piercing.html",
+      "seo"
+    ],
+    [
+      "equipo.html",
+      "seo"
+    ],
+    [
+      "nuestra-aventura.html",
+      "seo"
+    ],
+    [
+      "estudio.html",
+      "seo"
+    ],
+    [
+      "laser.html",
+      "seo"
+    ],
+    [
+      "micropigmentacion.html",
+      "seo"
+    ],
+    [
+      "gemas-dentales.html",
+      "seo"
+    ],
+    [
+      "eventos-congresos.html",
+      "seo"
+    ],
+    [
+      "faq.html",
+      "seo"
+    ],
+    [
+      "blog.html",
+      "seo"
+    ],
+    [
+      "contacto.html",
+      "seo"
+    ]
+  ]
+}
