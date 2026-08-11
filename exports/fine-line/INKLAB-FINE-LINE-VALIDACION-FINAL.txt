@@ -1,0 +1,21 @@
+INKLAB FINE LINE · VALIDACIÓN FINAL
+
+Solo una plantilla base: SÍ
+Contexto Divi: et_builder
+Divi 4: 4.27.4
+Hero: estructura del HTML aprobado
+Hero H1 definitivo: TATUAJES FINE LINE EN MADRID
+Galería: 17 imágenes reales
+Hover imagen: zoom + oscurecimiento + flecha + texto
+Botón galería: VER MÁS TATUAJES FINE LINE
+Revelado progresivo: 3 imágenes por clic
+Tres decisiones: rediseño premium negro + oro + crema
+Parallax: SÍ
+Opiniones Google: SÍ
+Trustindex shortcode: [trustindex no-registration=google]
+FAQ: 4 toggles
+CTA final: SÍ
+Tipografía JSON: hereda la tipografía real de INKLAB
+Responsive: desktop 3 columnas / tablet 2 / móvil carrusel horizontal
+Textos definitivos del documento: aplicados en hero, intro, galería, criterios, parallax, opiniones, FAQ y CTA
+AppDeploy: NO utilizado para esta entrega final
