@@ -1,0 +1,20 @@
+name: Package Fine Line
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build package
+        run: |
+          mkdir -p artifact
+          cp exports/fine-line/INKLAB-FINE-LINE-PLANTILLA-BASE-DIVI4-FINAL.json artifact/
+          cp exports/fine-line/INKLAB-FINE-LINE-PLANTILLA-BASE-PREVIEW-FINAL.html artifact/
+          cp exports/fine-line/INKLAB-FINE-LINE-VALIDACION-FINAL.txt artifact/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: INKLAB-FINE-LINE-CORREGIDO-ENTREGA
+          path: artifact/*
